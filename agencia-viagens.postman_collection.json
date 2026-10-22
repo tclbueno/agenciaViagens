@@ -1,0 +1,715 @@
+{
+  "info": {
+    "name": "Agência de Viagens",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Companhia aérea simulada (8085)",
+      "item": [
+        {
+          "name": "Listar voos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "voos"
+              ],
+              "raw": "http://localhost:8085/voos"
+            }
+          }
+        },
+        {
+          "name": "Buscar voo 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "voos",
+                "1"
+              ],
+              "raw": "http://localhost:8085/voos/1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Clientes",
+      "item": [
+        {
+          "name": "Cadastrar cliente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "clientes"
+              ],
+              "raw": "http://localhost:8080/clientes"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Carlos Teste\",\n  \"cpf\": \"529.982.247-25\",\n  \"email\": \"carlos@email.com\",\n  \"senha\": \"minhasenha\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "clientes"
+              ],
+              "raw": "http://localhost:8080/clientes"
+            }
+          }
+        },
+        {
+          "name": "Buscar cliente 3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "clientes",
+                "3"
+              ],
+              "raw": "http://localhost:8080/clientes/3"
+            }
+          }
+        },
+        {
+          "name": "Atualizar cliente 3",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "clientes",
+                "3"
+              ],
+              "raw": "http://localhost:8080/clientes/3"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Maria Silva Santos\",\n  \"email\": \"maria@email.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Bloquear cliente 4",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "clientes",
+                "4",
+                "bloquear"
+              ],
+              "raw": "http://localhost:8080/clientes/4/bloquear"
+            }
+          }
+        },
+        {
+          "name": "Desbloquear cliente 4",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "clientes",
+                "4",
+                "desbloquear"
+              ],
+              "raw": "http://localhost:8080/clientes/4/desbloquear"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Hotéis",
+      "item": [
+        {
+          "name": "Cadastrar hotel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "hoteis"
+              ],
+              "raw": "http://localhost:8080/hoteis"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Hotel Teste\",\n  \"precoDiaria\": 300.0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar hotéis",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "hoteis"
+              ],
+              "raw": "http://localhost:8080/hoteis"
+            }
+          }
+        },
+        {
+          "name": "Buscar hotel 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "hoteis",
+                "1"
+              ],
+              "raw": "http://localhost:8080/hoteis/1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Pacotes",
+      "item": [
+        {
+          "name": "Cadastrar pacote",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacotes"
+              ],
+              "raw": "http://localhost:8080/pacotes"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Recife 5 dias\",\n  \"origem\": \"São Paulo\",\n  \"destino\": \"Recife\",\n  \"descricao\": \"Praias e frevo\",\n  \"preco\": 2600.0,\n  \"duracaoDias\": 5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar pacotes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacotes"
+              ],
+              "raw": "http://localhost:8080/pacotes"
+            }
+          }
+        },
+        {
+          "name": "Só disponíveis",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacotes"
+              ],
+              "query": [
+                {
+                  "key": "disponivel",
+                  "value": "true"
+                }
+              ],
+              "raw": "http://localhost:8080/pacotes?disponivel=true"
+            }
+          }
+        },
+        {
+          "name": "Buscar pacote 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacotes",
+                "1"
+              ],
+              "raw": "http://localhost:8080/pacotes/1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Voos via API da agência (integração)",
+      "item": [
+        {
+          "name": "Consultar voos (passa pela companhia aérea)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "voos"
+              ],
+              "query": [
+                {
+                  "key": "origem",
+                  "value": "São Paulo"
+                },
+                {
+                  "key": "destino",
+                  "value": "Rio de Janeiro"
+                }
+              ],
+              "raw": "http://localhost:8080/voos?origem=S%C3%A3o%20Paulo&destino=Rio%20de%20Janeiro"
+            }
+          }
+        },
+        {
+          "name": "Buscar voo 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "voos",
+                "1"
+              ],
+              "raw": "http://localhost:8080/voos/1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Reservas",
+      "item": [
+        {
+          "name": "Criar reserva (sem hotel)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clienteId\": 3,\n  \"pacoteId\": 1,\n  \"vooId\": 1,\n  \"numeroPassageiros\": 2\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Criar reserva (com hotel)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clienteId\": 3,\n  \"pacoteId\": 1,\n  \"vooId\": 1,\n  \"numeroPassageiros\": 2,\n  \"hotelId\": 1,\n  \"numeroNoites\": 5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Criar reserva (Paris com Hotel Paris)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clienteId\": 3,\n  \"pacoteId\": 3,\n  \"vooId\": 3,\n  \"numeroPassageiros\": 2,\n  \"hotelId\": 3,\n  \"numeroNoites\": 8\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Criar reserva - voo de outro destino (erro 422)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clienteId\": 3,\n  \"pacoteId\": 1,\n  \"vooId\": 3,\n  \"numeroPassageiros\": 2,\n  \"hotelId\": 1,\n  \"numeroNoites\": 5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Criar reserva - voo de amanhã (testar multa)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clienteId\": 4,\n  \"pacoteId\": 1,\n  \"vooId\": 11,\n  \"numeroPassageiros\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Criar reserva - voo com 2 assentos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clienteId\": 3,\n  \"pacoteId\": 1,\n  \"vooId\": 12,\n  \"numeroPassageiros\": 3\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar reservas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas"
+              ],
+              "raw": "http://localhost:8080/reservas"
+            }
+          }
+        },
+        {
+          "name": "Buscar reserva 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas",
+                "1"
+              ],
+              "raw": "http://localhost:8080/reservas/1"
+            }
+          }
+        },
+        {
+          "name": "Reservas do cliente 3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas",
+                "cliente",
+                "3"
+              ],
+              "raw": "http://localhost:8080/reservas/cliente/3"
+            }
+          }
+        },
+        {
+          "name": "Confirmar pagamento da reserva 1",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas",
+                "1",
+                "confirmar"
+              ],
+              "raw": "http://localhost:8080/reservas/1/confirmar"
+            }
+          }
+        },
+        {
+          "name": "Cancelar reserva 1",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "reservas",
+                "1",
+                "cancelar"
+              ],
+              "raw": "http://localhost:8080/reservas/1/cancelar"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
