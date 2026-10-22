@@ -15,10 +15,5 @@
 
 ## Sumário
 
-- [Sobre o projeto](#sobre-o-projeto)
-- [Tecnologias utilizadas](#tecnologias-utilizadas)
-- [Arquitetura](#arquitetura)
-- [Como executar](#como-executar)
-- [Dados de teste](#dados-de-teste)
-- [Endpoints da API](#endpoints-da-api)
-- [Testes com Postman](#testes-com-postman)
+- [Sobre o projeto] <a id ="https://github.com/usuario/agencia-viagens/blob/main/README.md">
+
